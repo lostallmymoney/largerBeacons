@@ -1,0 +1,14 @@
+package LargerBeacons.mixin;
+
+import net.minecraft.block.entity.BeaconBlockEntity;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.ModifyArg;
+
+@Mixin(BeaconBlockEntity.class)
+public abstract class BeaconBlockEntityMixin {
+    @ModifyArg(method = "applyPlayerEffects", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/Box;expand(D)Lnet/minecraft/util/math/Box;"), index = 0)
+    static protected double enlargeBeacons(double x) {
+        return (x * 2);
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "largerbeacons_lostallmymoney",
+  "version": "${version}",
+  "name": "LargerBeacons",
+  "description": "Make beacon area of effects larger",
+  "authors": [
+    "lostallmymoney"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "https://github.com/lostallmymoney/largerBeacons",
+    "sources": "https://github.com/lostallmymoney/largerBeacons"
+  },
+  "license": "MIT",
+  "icon": "assets/largerbeacons_lostallmymoney/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "LargerBeacons.EnlargeMyBeacon"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "LargerBeacons_lostallmymoney.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12"
+  }
+}

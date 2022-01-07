@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "LargerBeacons.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BeaconBlockEntityMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
