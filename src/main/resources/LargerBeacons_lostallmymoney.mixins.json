@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "LargerBeacons.mixin",
+  "package": "largerBeacons.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BeaconBlockEntityMixin"
