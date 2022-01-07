@@ -9,6 +9,6 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 public abstract class BeaconBlockEntityMixin {
     @ModifyArg(method = "applyPlayerEffects(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;ILnet/minecraft/entity/effect/StatusEffect;Lnet/minecraft/entity/effect/StatusEffect;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/Box;expand(D)Lnet/minecraft/util/math/Box;"), index = 0)
     static private double enlargeBeacons(double x) {
-        return (x * 2);
+        return (x * 2.5);
     }
 }
